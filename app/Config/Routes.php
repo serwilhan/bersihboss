@@ -38,6 +38,8 @@ $routes->get('/admin', 'Admin\Admin::index');
 $routes->post('/admin/auth', 'Admin\Admin::auth');
 $routes->get('/dashboard', 'Admin\Dashboard::index');
 $routes->get('/dashboard/user', 'Admin\Dashboard::user');
+$routes->get('/dashboard/customer', 'Admin\Dashboard::customer');
+$routes->get('/dashboard/mitra', 'Admin\Dashboard::mitra');
 
 
 

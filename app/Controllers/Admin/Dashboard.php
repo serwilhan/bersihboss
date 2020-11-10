@@ -14,10 +14,10 @@ class Dashboard extends BaseController {
             'title' => "Admin Dashboard"
         ];
 
-        return view('admin/layout/template', $data);
+        return view('admin/index', $data);
     }
 
-    #USER PAGE
+    #ADMIN PAGE
     public function user() {
 
         $data = [
@@ -25,5 +25,25 @@ class Dashboard extends BaseController {
         ];
 
         return view('admin/user', $data);
+    }
+
+    #CUSTOMER PAGE
+    public function customer() {
+
+        $data = [
+            'title' => "Admin Dashboard"
+        ];
+
+        return view('admin/customer', $data);
+    }
+
+    #MITRA PAGE
+    public function mitra() {
+
+        $data = [
+            'title' => "Admin Dashboard"
+        ];
+
+        return view('admin/mitra', $data);
     }
 }
