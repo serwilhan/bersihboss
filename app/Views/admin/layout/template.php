@@ -46,19 +46,26 @@
 
             <!-- Nav Item - User Data -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>User</span>
+                <a class="nav-link pb-1" href="<?= base_url('dashboard/user'); ?>">
+                    <i class="fas fa-user-cog"></i>
+                    <span>Admin</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">List :</h6>
-                        <a class="collapse-item" href="<?= base_url('dashboard/user'); ?>">Admin</a>
-                        <a class="collapse-item" href="<?= base_url('dashboard/mitra'); ?>">Mitra</a>
-                        <a class="collapse-item" href="<?= base_url('dashboard/customer'); ?>">Customer</a>
-                    </div>
-                </div>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link py-0" href="<?= base_url('dashboard/mitra'); ?>">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Mitra</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link pt-1" href="<?= base_url('dashboard/customer'); ?>">
+                    <i class="fas fa-user-tag"></i>
+                    <span>Customer</span>
+                </a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
